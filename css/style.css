@@ -19,3 +19,7 @@ p {
 .space {
   height: 30px !important;
 }
+
+.icon {
+  font-size: 3em;
+}
