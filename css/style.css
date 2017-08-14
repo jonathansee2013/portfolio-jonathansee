@@ -1,5 +1,7 @@
+
+
 p {
-  font-size: 20px; 
+  font-size: 20px;
 }
 
 .card{
@@ -8,4 +10,12 @@ p {
 
 .card img {
   width: 100% !important;
+}
+
+.contact_icons {
+  padding: 10px !important;
+}
+
+.space {
+  height: 30px !important;
 }

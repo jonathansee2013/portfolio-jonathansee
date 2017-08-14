@@ -18,7 +18,7 @@
   <link href="css/scrolling-nav.css" rel="stylesheet">
 
   <link href="css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -70,6 +70,7 @@
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
+      <canvas id="canvas" resize></canvas>
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -88,7 +89,19 @@
           <div class="col-lg-12">
             <h1>About Me</h1>
             <p>I used to work in the legal profession. I made the transition to web development because as an avid user of websites, I am amazed at their beauty and structure and wish that I can do the same. So when I decided to take the leap of fate, I enrolled for the Web Development Immersive in General Assembly. It turned out to be the best decision I have ever made.</p>
-            <p>During my amazing experience, I discovered that I would like to focus on backend side of web development.</p>
+            <p>My main focus right is to doing backend side of web development as I prefer to be the architect of a website.</p>
+            <div class="row"></div>
+            <h2>Skills:</h2>
+            <i class="devicon-rails-plain-wordmark colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-backbonejs-plain-wordmark colored"></i>
+            <i class="devicon-nodejs-plain colored"></i>
+            <i class="devicon-jquery-plain-wordmark colored"></i>
+            <i class="devicon-github-plain-wordmark colored"></i>
+            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+
           </div>
         </div>
       </div>
@@ -109,7 +122,7 @@
                 <div class="card-block">
                   <h4 class="card-title">Tic Tac Toe</h4>
                   <p class="card-text">A game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.</p>
-                  <a href="#" class="btn btn-primary">Demo</a>
+                  <a href="https://jonathansee2013.github.io/tictactoe/" class="btn btn-primary"  target="_blank">Demo</a>
                 </div>
               </div>
             </div>
@@ -118,8 +131,8 @@
                 <img class="card-img-top" src="images/RentaCasa.png" alt="Card image cap">
                 <div class="card-block">
                   <h4 class="card-title">Renta Casa</h4>
-                  <p class="card-text">A game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.</p>
-                  <a href="#" class="btn btn-primary">Demo</a>
+                  <p class="card-text">A property review site where landlords posts their properties for rent. Tenants who stayed there can leave reviews of such properties and landlords can also post reviews of their tenants.</p>
+                  <a href="https://rentacasa.herokuapp.com/login" class="btn btn-primary" target="_blank">Demo</a>
                 </div>
               </div>
             </div>
@@ -128,8 +141,8 @@
                 <img class="card-img-top" src="images/PikQ.png" alt="Card image cap">
                 <div class="card-block">
                   <h4 class="card-title">PikQ</h4>
-                  <p class="card-text">A game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.</p>
-                  <a href="#" class="btn btn-primary">Demo</a>
+                  <p class="card-text">An interactive website where users can take photos of themselves, edit by filtering, putting the stickers and draw lines. These images can be saved and uploaded in Imgur.</p>
+                  <a href="https://pikq.herokuapp.com/" class="btn btn-primary" target="_blank">Demo</a>
                 </div>
               </div>
             </div>
@@ -138,8 +151,8 @@
                 <img class="card-img-top" src="images/CorinthiansBliss.png" alt="Card image cap">
                 <div class="card-block">
                   <h4 class="card-title">CorinthiansBliss</h4>
-                  <p class="card-text">A game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.</p>
-                  <a href="#" class="btn btn-primary">Demo</a>
+                  <p class="card-text">A dating website where users find their potential dates using the search function and connecting with them using the message function.</p>
+                  <a href="https://corinthiansbliss.herokuapp.com/welcome" class="btn btn-primary" target="_blank">Demo</a>
                 </div>
               </div>
             </div>
@@ -154,11 +167,15 @@
         <div class="row">
           <div class="col-lg-12">
             <h1>Contact Me:</h1>
-            <a href="mannysee@gmail.com">Email</a>
-            <br>
-            <a href="https://www.linkedin.com/in/jonathan-see/">LinkedIn</a>
-            <br>
-            <a href="https://github.com/jonathansee2013">Github</a>
+            <div class="space"></div>
+            <!-- Email icon by Icons8 -->
+            <a href="mailto:mannysee@gmail.com"  target="_blank" class="contact_icons"><img src="images/003-envelope.png" title="Email"></a>
+
+            <!-- LinkedIn icon by Icons8 -->
+            <a href="https://www.linkedin.com/in/jonathan-see/" target="_blank" class="contact_icons"><img src="images/002-linkedin.png" title="LinkedIn"></a>
+
+            <!-- GitHub icon by Icons8 -->
+            <a href="https://github.com/jonathansee2013"  target="_blank" class="contact_icons"><img src="images/001-github-logo.png" title="GitHub"></a>
           </div>
         </div>
       </div>
@@ -173,6 +190,8 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <script src="js/paper-full.js"></script>
+    <script type="text/paperscript" src="js/main.js" canvas="canvas"></script>
 
 </body>
 
